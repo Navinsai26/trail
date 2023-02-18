@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="trail">
+  <link
+    name="base">
+    <inertial>
+      <origin
+        xyz="0 -2.77555756156289E-17 0.0454049523035244"
+        rpy="0 0 0" />
+      <mass
+        value="8.27391024838928" />
+      <inertia
+        ixx="0.0876077282833699"
+        ixy="-3.7450840887426E-17"
+        ixz="-3.49435034465483E-18"
+        iyy="0.10668375718557"
+        iyz="2.20546907019992E-18"
+        izz="0.182027622167157" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://trail/meshes/base.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://trail/meshes/base.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="front_lf_wheel">
+    <inertial>
+      <origin
+        xyz="-1.30704220169253E-07 0.0103100232964124 2.53481405892986E-07"
+        rpy="0 0 0" />
+      <mass
+        value="0.0297341392937906" />
+      <inertia
+        ixx="1.22912881284287E-05"
+        ixy="-4.09034209713339E-11"
+        ixz="1.60261216176481E-10"
+        iyy="2.03788335831533E-05"
+        iyz="7.97625793515486E-11"
+        izz="1.2291134962144E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://trail/meshes/front_lf_wheel.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.298039215686275 0.298039215686275 0.298039215686275 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://trail/meshes/front_lf_wheel.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="front_lf_wheel"
+    type="continuous">
+    <origin
+      xyz="0.088 -0.09815 -0.014"
+      rpy="0 0 0" />
+    <parent
+      link="base" />
+    <child
+      link="front_lf_wheel" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="front_rt_wheel">
+    <inertial>
+      <origin
+        xyz="-2.58248120693638E-07 0.0103100232964128 1.21013738460518E-07"
+        rpy="0 0 0" />
+      <mass
+        value="0.0297341392937919" />
+      <inertia
+        ixx="1.22910761029341E-05"
+        ixy="-8.10842354648194E-11"
+        ixz="1.14908676486583E-10"
+        iyy="2.03788335831541E-05"
+        iyz="3.82165614842371E-11"
+        izz="1.22913469876395E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://trail/meshes/front_rt_wheel.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.298039215686275 0.298039215686275 0.298039215686275 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://trail/meshes/front_rt_wheel.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="front_rt_wheel"
+    type="continuous">
+    <origin
+      xyz="0.088 0.09815 -0.014"
+      rpy="0 0 -3.1416" />
+    <parent
+      link="base" />
+    <child
+      link="front_rt_wheel" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="rear_lf_wheel">
+    <inertial>
+      <origin
+        xyz="-2.58248121165483E-07 0.0103100232964133 1.21013736323339E-07"
+        rpy="0 0 0" />
+      <mass
+        value="0.0297341392937928" />
+      <inertia
+        ixx="1.22910761029346E-05"
+        ixy="-8.10842353933175E-11"
+        ixz="1.14908676236913E-10"
+        iyy="2.03788335831546E-05"
+        iyz="3.82165618947877E-11"
+        izz="1.22913469876397E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://trail/meshes/rear_lf_wheel.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.298039215686275 0.298039215686275 0.298039215686275 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://trail/meshes/rear_lf_wheel.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rear_lf_wheel"
+    type="continuous">
+    <origin
+      xyz="-0.088 -0.09815 -0.014"
+      rpy="0 0 0" />
+    <parent
+      link="base" />
+    <child
+      link="rear_lf_wheel" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="rear_rt_wheel">
+    <inertial>
+      <origin
+        xyz="2.58248122109173E-07 0.0103100232964118 -1.21013734213915E-07"
+        rpy="0 0 0" />
+      <mass
+        value="0.0297341392937905" />
+      <inertia
+        ixx="1.22910761029333E-05"
+        ixy="8.1084235173108E-11"
+        ixz="1.14908675934354E-10"
+        iyy="2.03788335831533E-05"
+        iyz="-3.82165615622816E-11"
+        izz="1.22913469876392E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://trail/meshes/rear_rt_wheel.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.298039215686275 0.298039215686275 0.298039215686275 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://trail/meshes/rear_rt_wheel.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rear_rt_wheel"
+    type="continuous">
+    <origin
+      xyz="-0.088 0.09815 -0.014"
+      rpy="0 0 -3.1416" />
+    <parent
+      link="base" />
+    <child
+      link="rear_rt_wheel" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="body">
+    <inertial>
+      <origin
+        xyz="0.073479190241858 -0.00158257308556928 0.473034168557234"
+        rpy="0 0 0" />
+      <mass
+        value="14.8002543697095" />
+      <inertia
+        ixx="0.653074016104275"
+        ixy="2.33534174190076E-06"
+        ixz="0.00489416204660911"
+        iyy="0.602386715882378"
+        iyz="-5.14066703654387E-07"
+        izz="0.310799528265861" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://trail/meshes/body.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://trail/meshes/body.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="body"
+    type="fixed">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="base" />
+    <child
+      link="body" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>
